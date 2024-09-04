@@ -1,0 +1,127 @@
+/*
+ Theme Name:   Understrap Child
+ Theme URI:    https://example.com/
+ Description:  Дочерняя тема для Understrap
+ Author:       Alex Miller
+ Author URI:   @Alex_millller
+ Template:     understrap
+ Version:      1.0.0
+*/
+
+/* Импортирование стилей из родительской темы */
+@import url("../understrap/style.css");
+
+
+
+/* Файл: /wp-content/themes/your-child-theme/single-real_estate.css */
+
+
+
+
+#header {
+    background-color: #ffffff !important;
+}
+ 
+
+/* Стили для карточек объектов недвижимости */
+.real-estate-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.real-estate-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Стили для круглых изображений городов */
+.city-thumbnail {
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+/* Убедитесь, что изображения полностью вписываются в контейнер */
+.city-thumbnail img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Стили для формы добавления объекта недвижимости */
+.add-real-estate .form-group {
+    margin-bottom: 15px;
+}
+
+/* Стили для баннера */
+.banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card {
+   
+     border: none!important; 
+  
+}
+
+
+
+.search-form .form-control {
+    width: 70%;
+}
+
+.search-form .btn {
+    width: 25%;
+}
+
+
+/* Стили для кнопки мобильного меню */
+.navbar-toggler {
+    border: none;
+    background: none;
+    background-color: #ff972d!important;
+}
+@media (min-width: 1024px) {
+    .navbar-toggler {
+      background-color: #fdfdfd00!important;
+    }
+}
+/* Иконка кнопки "гамбургер" */
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"%3e%3cpath fill="none" stroke="currentColor" stroke-width="2" d="M1 4h14M1 8h14M1 12h14"/%3e%3c/svg%3e');
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+}
+
+/* Стили для выпадающего меню */
+.navbar-nav .dropdown-menu {
+    margin-top: 0;
+    border-radius: 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Отступы для элементов выпадающего меню */
+.navbar-nav .dropdown-item {
+    padding: 10px 15px;
+}
+
+/* Стили для активного элемента меню */
+.navbar-nav .nav-item.active .nav-link {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Стили для выделения при наведении */
+.navbar-nav .nav-item:hover .nav-link {
+    color: #0056b3;
+}
+
+/* Показываем выпадающее меню при наведении */
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+
